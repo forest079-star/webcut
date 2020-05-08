@@ -1,0 +1,139 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+main {
+  min-height: 500px;
+}
+
+header {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 8.8rem;
+
+  nav {
+    width: 41.2rem;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        a {
+          color: #fff;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+}
+
+h1.logo a {
+  background-image: url("../img/logo-new_工作區域\ 1@2x.png");
+  width: 80px;
+  height: 49px;
+  border-radius: 0;
+  background-size: cover !important;
+  @extend %text-indent;
+}
+
+.hero {
+  background-image: url("../img/68@2x.png");
+  height: 394px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include breakpoint(md) {
+    height: 840px;
+  }
+
+  .banner_text {
+    text-align: right;
+    color: $secondary;
+    
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 400;
+    } 
+
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    @include breakpoint(md){
+      h3 {
+        font-size: 2rem;
+      } 
+  
+      h2 {
+        font-size: 4.8rem;
+      }
+    }
+    @include breakpoint(lg){
+      h3 {
+        font-size: 3.6rem;
+      } 
+  
+      h2 {
+        font-size: 6.4rem;
+      }
+    }
+  }
+}
+
+.service{
+  background-color: $pink;
+  padding-top:6.4rem;
+  padding-bottom: 8rem;
+  .service_list{
+    display: flex;
+    justify-content: space-between;
+    // text-align: center;
+    li{
+      width: 23.5%;
+      height: 100%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+  }
+  h2{
+    text-align: center;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    margin-bottom: 6rem;
+    color:$secondary;
+  }
+  .service_img{
+    display: flex;
+    height: 100px;
+    margin-bottom: 4rem;
+  }
+  h3{
+    color:$secondary;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 0.4rem;
+  }
+  p{
+    color:#000;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    max-width: 208px;
+    
+  }
+}
