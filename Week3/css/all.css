@@ -2126,6 +2126,8 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
   max-width: 100%;
+  height: auto;
+  border: 0;
   display: block;
 }
 
@@ -2263,6 +2265,12 @@ h1.logo a {
   flex-wrap: wrap;
 }
 
+.title {
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  text-align: center;
+}
+
 main {
   min-height: 500px;
 }
@@ -2366,8 +2374,6 @@ h1.logo a {
 
 .service h2 {
   text-align: center;
-  font-size: 4.8rem;
-  line-height: 7.2rem;
   margin-bottom: 6rem;
   color: #650300;
 }
@@ -2390,5 +2396,68 @@ h1.logo a {
   font-size: 1.6rem;
   line-height: 2.4rem;
   max-width: 208px;
+}
+
+.Classic {
+  background-color: #fff;
+  padding-top: 6.4rem;
+  padding-bottom: 8rem;
+}
+
+.Classic .title {
+  color: #650300;
+  margin-bottom: 6rem;
+}
+
+.Classic .items {
+  display: flex;
+  margin-bottom: 3.2rem;
+}
+
+.Classic .items:nth-of-type(even) img {
+  margin-right: 0;
+  margin-left: 2%;
+}
+
+.Classic .items .items_img {
+  width: 66%;
+  margin-right: 2%;
+}
+
+.Classic .item_list {
+  color: #AA0601;
+}
+
+.Classic .item_list .items:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.Classic .item_list h3 {
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Classic .item_list h3 img {
+  margin-right: 0.8rem;
+}
+
+.joint_design {
+  padding-top: 6.4rem;
+  padding-bottom: 48rem;
+  background-image: url("../img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash@2x.png");
+}
+
+.joint_design .joint_container {
+  max-width: 1540px;
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+}
+
+.joint_design .title {
+  color: #fff;
 }
 /*# sourceMappingURL=all.css.map */
