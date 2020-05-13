@@ -1,6 +1,26 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  @include ipad() {
+
+    // padding-right: 4.8rem;
+    // padding-left: 4.8rem;
+
+  }
+}
+
+.d-md{
+  display: flex !important;
+  @include iphone(){
+    display: none !important;
+  }
+}
+.d-xs{
+  display: none !important;
+  @include iphone(){
+    display: flex !important;
+  }
 }
 
 .row {
@@ -12,6 +32,15 @@
   font-size: 4.8rem;
   line-height: 7.2rem;
   text-align: center;
+
+  @include ipad() {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+
+  @include iphone(){
+    font-size: 2.4rem;
+  }
 }
 
 
@@ -26,18 +55,81 @@ header {
   align-items: center;
   padding: 3rem 8.8rem;
 
+  @include ipad() {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+
+  @include iphone() {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 1.05rem;
+    padding-bottom: 1.05rem;
+    justify-content: center;
+    position: relative;
+  }
+
   nav {
     width: 41.2rem;
+
+    @include iphone() {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      text-align: center;
+    }
+
+    .hamburger {
+      display: none;
+      position: absolute;
+      top: -25px;
+      left: 16px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      z-index: 2;
+      @include iphone(){
+        display: block;
+      }
+      .line{
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0 0 7px 0;
+      }
+
+    }
 
     .menu {
       display: flex;
       justify-content: space-between;
+      overflow: hidden;
+
+      @include iphone() {
+        flex-direction: column;
+        width: 100%;
+        z-index: 1;
+        // height: 100%;
+        height: 0;
+
+      }
 
       li {
+        @include iphone() {
+          background-color: $primary;
+          border: 1px solid #fff
+        }
+
         a {
           color: #fff;
           font-size: 2rem;
           line-height: 3rem;
+
+          @include iphone() {
+            padding: 1.6rem 0;
+          }
         }
       }
     }
@@ -52,6 +144,13 @@ h1.logo a {
   border-radius: 0;
   background-size: cover !important;
   @extend %text-indent;
+
+  @include iphone() {
+    background-image: url("../img/logo-new_工作區域\ 1.png");
+
+    width: 48px;
+    height: 29px;
+  }
 }
 
 .hero {
@@ -106,9 +205,19 @@ h1.logo a {
   padding-top: 6.4rem;
   padding-bottom: 8rem;
 
+  @include ipad() {
+    padding-top: 4rem;
+
+  }
+  @include iphone(){
+    padding-top: 3.2rem;
+    padding-bottom: 1.6rem;
+  }
+
   .service_list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     // text-align: center;
     li {
@@ -118,7 +227,29 @@ h1.logo a {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      @include ipad() {
+        width: 48%;
+        margin-bottom: 4rem;
+
+        &:nth-child(2) {
+          order: -2;
+        }
+
+        &:nth-child(3) {
+          order: -1;
+        }
+
+      }
+
+      @include iphone(){
+        width: 100%;
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+      }
     }
+
+
   }
 
   h2 {
@@ -127,12 +258,22 @@ h1.logo a {
     // line-height: 7.2rem;
     margin-bottom: 6rem;
     color: $secondary;
+
+    @include iphone(){
+      margin-bottom:3.2rem;
+    }
+
   }
 
   .service_img {
     display: flex;
     height: 100px;
     margin-bottom: 4rem;
+
+    @include ipad() {
+      margin-bottom: 1.6rem;
+      height: 80px;
+    }
   }
 
   h3 {
@@ -140,6 +281,11 @@ h1.logo a {
     font-size: 2.4rem;
     line-height: 3.6rem;
     margin-bottom: 0.4rem;
+
+    @include ipad() {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 
   p {
@@ -147,9 +293,13 @@ h1.logo a {
     font-size: 1.6rem;
     line-height: 2.4rem;
     max-width: 208px;
+    @include iphone(){
+      max-width: 230px;
+    }
 
   }
 }
+
 
 
 .Classic {
@@ -157,23 +307,56 @@ h1.logo a {
   padding-top: 6.4rem;
   padding-bottom: 8rem;
 
+  @include ipad() {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @include iphone(){
+    padding-bottom: 0;
+  }
+
   .title {
     color: $secondary;
     margin-bottom: 6rem;
+
+
+    @include ipad() {
+      margin-bottom: 3.2rem;
+    }
+
+   
+
   }
 
   .items {
     display: flex;
     margin-bottom: 3.2rem;
+    @include iphone(){
+      align-items: center;
+    }
 
     &:nth-of-type(even) img {
       margin-right: 0;
       margin-left: 2%;
+
+      @include ipad() {
+        margin-right: 2%;
+        margin-left: 0;
+      }
     }
 
     .items_img {
       width: 66%;
       margin-right: 2%;
+
+      @include ipad() {
+        max-width: 410px;
+      }
+
+      @include iphone(){
+        width: 100%;
+      }
 
     }
   }
@@ -184,6 +367,10 @@ h1.logo a {
     .items {
       &:nth-child(even) {
         flex-direction: row-reverse;
+
+        @include ipad() {
+          flex-direction: row;
+        }
       }
 
     }
@@ -195,8 +382,26 @@ h1.logo a {
       justify-content: center;
       align-items: center;
 
+      @include ipad() {
+        width: 100%;
+        font-size: 2.8rem;
+        line-height: 4.2rem;
+      }
+      @include iphone(){
+        position: absolute;
+        color:#fff;
+      }
+
       img {
         margin-right: 0.8rem;
+
+        @include ipad() {
+          width: 32px;
+        }
+
+        @include iphone(){
+          filter: grayscale(100%);
+        }
       }
 
     }
@@ -209,7 +414,10 @@ h1.logo a {
   background-image: url('../img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash@2x.png');
   background-position: center 0;
 
-
+  @include ipad() {
+    padding-top: 4rem;
+    padding-bottom: 36rem;
+  }
 
   .joint_container {
     max-width: 1540px;
@@ -218,7 +426,12 @@ h1.logo a {
     margin-bottom: 6rem;
 
     @include ipad() {
-      padding: 0 2.4rem;
+      padding: 0 4.8rem;
+      margin-bottom: 4rem;
+    }
+
+    @include iphone(){
+      padding:0 2.4rem;
     }
 
     // justify-content: space-between;
@@ -227,7 +440,7 @@ h1.logo a {
       width: 35.49%;
       margin-right: 8px;
 
-      @include ipad() {
+      @include iphone() {
         width: 45.49%;
       }
     }
@@ -237,6 +450,10 @@ h1.logo a {
   .title {
     color: #fff;
     margin-bottom: 6rem;
+
+    @include ipad() {
+      margin-bottom: 3.2rem;
+    }
   }
 
   .right_t_block {
@@ -249,7 +466,7 @@ h1.logo a {
     overflow: hidden;
 
     // align-items: center;
-    @include ipad() {
+    @include iphone() {
       flex-direction: column-reverse;
       align-items: flex-start;
     }
@@ -259,6 +476,10 @@ h1.logo a {
       margin-right: 0.8rem;
 
       @include ipad() {
+        width: 58px;
+      }
+
+      @include iphone() {
         width: 16.78%;
       }
     }
@@ -279,9 +500,17 @@ h1.logo a {
       max-width: 259px;
 
       @include ipad() {
+        overflow: hidden;
         position: absolute;
         width: 56%;
         right: 5%;
+        top: 61%;
+      }
+
+      @include iphone() {
+        position: absolute;
+        width: 62%;
+        right: 0%;
         top: 124%;
 
       }
@@ -296,6 +525,13 @@ h1.logo a {
         background-size: cover;
         background-position: center;
         position: relative;
+
+        @include ipad() {
+          padding-top: 28.38%;
+        }
+        @include iphone() {
+          padding-top: 58.38%;
+        }
       }
 
       .more {
@@ -307,6 +543,19 @@ h1.logo a {
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         background: #fff;
+
+        @include ipad() {
+          left: 34.8%;
+          width: 107%;
+          padding-bottom: 23.54%;
+          //   font-size: 40px;
+          //   line-height: 30px;
+
+        }
+
+        @include iphone(){
+          padding-bottom: 35.54%;
+        }
 
         &:hover .more_text:nth-child(2) {
           top: -50%;
@@ -335,6 +584,12 @@ h1.logo a {
           font-weight: 700;
           color: $primary;
 
+          @include ipad() {
+            font-size: 40px;
+            line-height: 30px;
+            top: 23%;
+          }
+
           @include iphone() {
             font-size: 2.6rem;
             padding-left: 1.2rem;
@@ -348,10 +603,15 @@ h1.logo a {
           top: 50%;
           right: 10%;
           transform: translateY(-50%);
+          @include ipad() {
+            width: 26px;
+            right: 12%;
+
+          }
 
           @include iphone() {
-            width: 15%;
-            right: 5%;
+            width: 18px;
+            right: 8%;
 
           }
         }
@@ -364,6 +624,26 @@ h1.logo a {
   .type {
     width: 48.75%;
     position: relative;
+
+    @include ipad() {
+      max-height: 280px;
+    }
+
+    @include iphone(){
+      width: 100%;
+      &:first-child{
+        margin-bottom: 2rem;
+      }
+    }
+
+    img {
+      @include ipad() {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
 
     &:after {
       content: '';
@@ -394,21 +674,48 @@ h1.logo a {
     font-size: 7.2rem;
     z-index: 1;
 
+    @include ipad() {
+      font-size: 3.2rem;
+      line-height: 2.5rem;
+    }
+
   }
 }
+
 
 .customer {
   margin-top: -336px;
 
+  .container {
+    @include ipad() {
+      padding-right: 4.8rem;
+      padding-left: 4.8rem;
+    }
+
+    @include iphone(){
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+
   .title {
     color: #fff;
     margin-bottom: 6rem;
+
+    @include ipad() {
+      margin-bottom: 3.2rem;
+    }
   }
 
   .card-list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8rem;
+
+    @include ipad() {
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
   }
 
 }
@@ -416,6 +723,18 @@ h1.logo a {
 .card {
   width: 24%;
   background-color: #fff;
+
+  @include ipad() {
+    width: 48%;
+
+    &:nth-child(-n+2) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  @include iphone(){
+    width: 100%;
+  }
 
   div {
     border-width: 1px;
@@ -454,6 +773,15 @@ h1.logo a {
   padding-top: 6.4rem;
   padding-bottom: 9.2rem;
 
+  @include ipad() {
+    padding-top: 4rem;
+    padding-bottom: 5.6rem;
+  }
+  @include iphone(){
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+
   .title {
     text-align: center;
     margin-bottom: 2.4rem;
@@ -463,11 +791,21 @@ h1.logo a {
   .container_us {
     max-width: 792px;
 
+    @include ipad() {
+      max-width: 592px;
+    }
+
     .text {
       font-size: 2rem;
       line-height: 3rem;
       font-weight: 900;
       margin-bottom: 2rem;
+
+      @include ipad() {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+
     }
   }
 
@@ -510,10 +848,18 @@ h1.logo a {
     align-items: center;
     margin-bottom: 4.2rem;
 
+    @include ipad() {
+      align-items: flex-start;
+    }
+
     input {
       margin: 4px;
       width: 22px;
       height: 22px;
+
+      @include ipad() {
+        margin: 0 4px 0 0;
+      }
     }
 
     label {
@@ -544,8 +890,19 @@ footer {
   padding-bottom: 2.743rem;
   color: #fff;
 
+  @include iphone(){
+    padding-top: 2.4rem;
+  }
+
   a {
     color: #fff;
+
+    img {
+      @include ipad() {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 
   .footer_menu {
@@ -553,14 +910,38 @@ footer {
     align-items: center;
     margin-bottom: 2.4rem;
 
+    @include iphone(){
+      margin-bottom: 0;
+      position: absolute;
+    right: 1.2rem;
+    }
+
     li:nth-child(-n+5) {
       font-size: 1.6rem;
       line-height: 2.4rem;
       margin-right: 4.8rem;
+
+      @include ipad() {
+        margin-right: 4rem;
+      }
+      @include iphone(){
+        display: none;
+      }
     }
 
     li:nth-child(n+6) {
       margin-right: 3.6rem;
+
+      @include ipad() {
+        margin-right: 2.4rem;
+      }
+
+    //   @include iphone(){
+    //     position: absolute;
+    // top: 0;
+    // right: 9px;
+
+      // }
     }
 
     li:last-child {
@@ -577,16 +958,31 @@ footer {
     align-items: center;
     margin-bottom: 2.2rem;
 
+    @include ipad() {
+      margin-bottom: 0.9rem;
+    }
+
+
     img {
       width: 36px;
       height: 36px;
       margin-right: 2.4rem;
+
+      @include ipad() {
+        width: 23px;
+        height: 23px;
+      }
 
     }
 
     span {
       font-size: 3.6rem;
       line-height: 5.4rem;
+
+      @include ipad() {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
     }
   }
 
@@ -596,23 +992,58 @@ footer {
     display: flex;
     align-items: center;
 
+    li{
+      @include iphone(){
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    @include ipad() {
+      margin-top: 2.4rem;
+    }
+
+    .icon_list{
+      @include iphone(){
+        margin-left: 0;
+      }
+    }
+
+    @include iphone(){
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 1.4rem;
+    }
+
     li:first-child {
 
       margin-right: 3.8rem;
 
+      @include ipad() {
+        margin-right: 0;
+        // display: none;
+        width: 0;
+      }
+
     }
-    .copyright{
+
+    .copyright {
       font-size: 1.6rem;
       line-height: 2.4rem;
     }
 
-    li:nth-child(n+3){
+    li:nth-child(n+3) {
       font-size: 1.6rem;
       line-height: 2.1rem;
       margin-right: 6.2rem;
+
+      @include ipad() {
+        margin-right: 2.4rem;
+      }
     }
 
-    li:last-child{
+
+
+    li:last-child {
       margin-right: 0;
     }
 
