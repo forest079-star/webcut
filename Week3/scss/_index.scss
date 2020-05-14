@@ -233,6 +233,7 @@
     max-width: 1540px;
     margin: 0 auto;
     display: flex;
+    align-items: flex-start;
     margin-bottom: 6rem;
 
     @include ipad() {
