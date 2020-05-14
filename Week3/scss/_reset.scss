@@ -1,17 +1,85 @@
 /* ---reset.css--- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,62 +87,87 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-*{
+* {
 	box-sizing: border-box;
 	position: relative;
 }
 
-*:before, *:after {
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
-  font-size: 10px;
+	-webkit-text-size-adjust: 100%;
+	font-size: 10px;
 }
 
 a {
 	display: block;
 	text-decoration: none;
 	color: #000;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+	font-weight: bold;
 }
 
-img{
+img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: top;
@@ -83,25 +176,46 @@ img{
 }
 
 
-//ios 
-input, button, select, optgroup, textarea {
-	margin: 0px;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-	
-	/* -webkit-appearance: none;會產生checkbox消失 */
-	/* Safari 和 Chrome 常用於 iOS 下移除內建樣式 */
-	-moz-appearance: none;
-	/* FireFox */
-	appearance: none;
-/*以下移除 Chrome 產生的按鈕陰影*/
-	outline-style: none;
-	outline-width: 0px;
-	border: none;
-	border-style: none;
-	text-shadow: none;
-	-webkit-user-select: text;
-	outline-color: transparent;
-	box-shadow: none;
+// //ios 
+// input,
+// button,
+// select,
+// optgroup,
+// textarea {
+// 	margin: 0px;
+// 	font-family: inherit;
+// 	font-size: inherit;
+// 	line-height: inherit;
+
+// 	/* -webkit-appearance: none;會產生checkbox消失 */
+// 	/* Safari 和 Chrome 常用於 iOS 下移除內建樣式 */
+// 	-moz-appearance: none;
+// 	/* FireFox */
+// 	appearance: none;
+// 	/*以下移除 Chrome 產生的按鈕陰影*/
+// 	outline-style: none;
+// 	outline-width: 0px;
+// 	border: none;
+// 	border-style: none;
+// 	text-shadow: none;
+// 	-webkit-user-select: text;
+// 	outline-color: transparent;
+// 	box-shadow: none;
+// }
+
+/*移除IOS內建按鈕樣式*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	-webkit-appearance: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+input {
+	-webkit-appearance: none;
+	border-radius: 0;
 }
