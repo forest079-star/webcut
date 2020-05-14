@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="css/all.css">
-  <title></title>
+  <title>首頁</title>
 
   <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 </head>
 
 <body>
@@ -39,7 +41,7 @@
             <a href="#">部落格</a>
           </li>
           <li>
-            <a href="#">常見問題</a>
+            <a href="faq.html">常見問題</a>
           </li>
         </ul>
       </nav>
@@ -98,7 +100,7 @@
               <h3 class="d-xs"><img src="img/iconfinder_44_2529968-2.svg" alt="">OPTICAL</h3>
             </li>
             <li class="items">
-              <img class="items_img" src="img/pic@2x.png" alt="">
+              <img class="items_img gray-img" src="img/15@2x.png" alt="">
               <h3 class="d-md"><img src="img/Layer_1.svg" alt=""> SUNGLASSES</h3>
               <h3 class="d-xs"><img src="img/Layer_1-2.svg" alt=""> SUNGLASSES</h3>
             </li>
@@ -120,25 +122,13 @@
               <div class="right_b_block">
                 <img class="right_b_left_img" src="img/24@2x.png" alt="">
                 <div class="right_b_right_block">
-                  <img class="right_b_right_t" src="img/34@2x.png" alt="">
-                  <!-- <div class="right_b_right_b">
-                    <div class="bg_color">
-                      <a href="#" class="more">
-                        <span class="more_text">MORE</span>
-                        <span class="more_text">MORE</span>
-                        <span class="more_text">MORE</span>
-                        <span class="arrow"></span>
-                      </a>
-                    </div>
-                  </div> -->
+                  <img class="right_b_right_t" src="img/34@2x.png" alt="">  
                   <div class="right_b_right_b">
-                    <!-- <img class="bg_glass" src="img/5.png" alt=""> -->
                     <div class="bg_color">
                       <a href="#" class="more">
                         <span class="more_text">MORE</span>
                         <span class="more_text">MORE</span>
                         <span class="more_text">MORE</span>
-                        <!-- <span class="arrow"></span> -->
                         <img class="arrow" src="img/ic_arrow_forward_24px.svg" alt="">
                       </a>
                     </div>
@@ -237,11 +227,11 @@
     <footer>
       <div class="container">
         <ul class="footer_menu">
-          <li><a href="#">首頁</a></li>
+          <li><a href="index.html">首頁</a></li>
           <li><a href="#">系列邊框</a></li>
           <li><a href="#">門市據點</a></li>
           <li><a href="#">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
+          <li><a href="faq.html">常見問題</a></li>
           <li class="icon_list"><a href="#"><img src="img/ic_social_fb.svg" alt="" srcset=""></a></li>
           <li><a href="#"><img src="img/ic_social_ig.svg" alt="" srcset=""></a></li>
           <li><a href="#"><img src="img/ic_social_line.svg" alt="" srcset=""></a></li>
@@ -255,7 +245,7 @@
           <span>glasses@business.com</span>
         </div>
         <ul class="copyright_list">
-          <li><img src="img/logo-new_工作區域 1-1.png" alt="" srcset=""></li>
+          <li class="copylogo"><img src="img/logo-new_工作區域 1-1.png" alt=""></li>
           <li class="copyright">Copyright © 2020 Glasses.All rights reserved.</li>
           <li class="icon_list"><a href="#">隱私權政策</a></li>
           <li><a href="#">服務條款</a></li>
@@ -263,6 +253,16 @@
       </div>
     </footer>
   </div>
+
+
+  <script>
+    $('.js-hamburger').on('click', function(){
+      
+      $(this).toggleClass('active');
+    })
+
+   
+  </script>
 
 </body>
 
