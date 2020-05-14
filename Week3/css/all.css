@@ -2978,6 +2978,10 @@ footer .copyright_list .copylogo {
   }
 }
 
+.joint_design .joint_container .right_img {
+  width: 52%;
+}
+
 .joint_design .title {
   color: #fff;
   margin-bottom: 6rem;
