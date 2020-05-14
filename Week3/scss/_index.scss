@@ -247,11 +247,11 @@
     // justify-content: space-between;
     // align-self: start;
     .left_img {
-      width: 35.49%;
+      // width: 35.49%;
       margin-right: 8px;
 
       @include iphone() {
-        width: 45.49%;
+        // width: 45.49%;
       }
     }
   }
