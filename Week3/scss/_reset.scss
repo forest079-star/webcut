@@ -168,11 +168,11 @@ h6 {
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: top;
 	border: 0;
 	display: block;
+	// /*流動圖片設定*/
+	max-width: 100%;
+	height: auto;
 }
 
 
@@ -366,16 +366,6 @@ select,
 textarea {
 	outline: none;
 }
-
-
-img {
-	border: 0;
-	display: block;
-	// /*流動圖片設定*/
-	max-width: 100%;
-	height: auto;
-}
-
 
 /*去除異常空格*/
 
