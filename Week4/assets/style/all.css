@@ -1684,11 +1684,10 @@ h6 {
   font-weight: bold; }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: top;
   border: 0;
-  display: block; }
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 button,
 input,
@@ -1796,12 +1795,6 @@ button,
 select,
 textarea {
   outline: none; }
-
-img {
-  border: 0;
-  display: block;
-  max-width: 100%;
-  height: auto; }
 
 /*去除異常空格*/
 picture {
