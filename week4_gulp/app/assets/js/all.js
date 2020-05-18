@@ -17,4 +17,4 @@ $('.question li').on('click', function () {
 
   $(this).addClass('active rotate').find('p').slideDown().parent().siblings('li').find('p').not('.active').slideUp();
 
-})
+});
