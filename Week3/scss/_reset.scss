@@ -167,7 +167,6 @@ h6 {
 	font-weight: bold;
 }
 
-
 img {
 	border: 0;
 	display: block;
@@ -188,3 +187,200 @@ button {
   border-radius: 0;
 }
 
+//ios 
+input,
+button,
+select,
+optgroup,
+textarea {
+	margin: 0px;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+
+	/* -webkit-appearance: none;會產生checkbox消失 */
+	/* Safari 和 Chrome 常用於 iOS 下移除內建樣式 */
+	-moz-appearance: none;
+	/* FireFox */
+	appearance: none;
+	/*以下移除 Chrome 產生的按鈕陰影*/
+	outline-style: none;
+	outline-width: 0px;
+	border: none;
+	border-style: none;
+	text-shadow: none;
+	-webkit-user-select: text;
+	outline-color: transparent;
+	box-shadow: none;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit
+		/* 1 */
+	;
+	font-size: 100%
+		/* 1 */
+	;
+	line-height: 1.15
+		/* 1 */
+	;
+	margin: 0
+		/* 2 */
+	;
+}
+
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input
+
+/* 1 */
+	{
+	overflow: visible;
+}
+
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select
+
+/* 1 */
+	{
+	text-transform: none;
+}
+
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+
+
+
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button
+		/* 1 */
+	;
+	font: inherit
+		/* 2 */
+	;
+}
+
+
+address {
+	font-style: normal;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+div,
+span,
+article,
+section,
+a,
+ul,
+li {
+	&:focus {
+		outline: none;
+	}
+}
+
+/* 去除input藍色框框 */
+input,
+button,
+select,
+textarea {
+	outline: none;
+}
+
+/*去除異常空格*/
+
+picture {
+	overflow: hidden;
+	font-size: 0;
+}
