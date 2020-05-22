@@ -1,0 +1,377 @@
+/* ---reset.css--- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AndaleMono";
+  src: url("../AndaleMono.ttf") format("truetype");
+}
+
+html,
+body {
+  font-family: "Roboto", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 36px;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1920px;
+  background-color: #fff;
+  padding-top: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 0 10px;
+  }
+}
+
+.title {
+  font-weight: 400;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #9f9f9f;
+}
+
+.title h2 {
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.title span {
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 16px;
+  color: #A00404;
+}
+
+.introduce h1 {
+  font-size: 80px;
+  font-family: "AndaleMono", monospace;
+  padding-bottom: 24px;
+  line-height: 90px;
+  margin-bottom: 48px;
+  border-bottom: 2px solid #000;
+}
+
+.introduce img {
+  width: 324px;
+  height: auto;
+  margin-bottom: 48px;
+}
+
+.introduce .profile-block,
+.introduce .education-block {
+  margin-bottom: 72px;
+}
+
+.introduce .contents {
+  padding-left: 48px;
+}
+
+.introduce .profile-block .contents p:first-of-type {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.introduce .profile-block .contents p:first-of-type::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #96A9C4;
+  position: absolute;
+  top: 8.5px;
+  left: -32px;
+}
+
+.introduce .education-block .contents {
+  position: relative;
+}
+
+.introduce .education-block .contents li:first-of-type {
+  padding-bottom: 32px;
+}
+
+.introduce .education-block .contents li:last-child::before {
+  height: 0;
+}
+
+.introduce .education-block .contents li {
+  position: relative;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 36px;
+}
+
+.introduce .education-block .contents li::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 10.5px;
+  bottom: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #96A9C4;
+}
+
+.introduce .education-block .contents li::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #96A9C4;
+  top: 10.5px;
+  left: -32px;
+}
+
+.skill {
+  background-color: #96A9C4;
+  height: 360px;
+  margin-top: 141px;
+  margin-bottom: 141px;
+  display: flex;
+}
+
+.skill_list {
+  width: 100%;
+  padding: 31px 102px 55.5px;
+  background-color: #415165;
+  height: 494px;
+  align-self: center;
+  color: #fff;
+}
+
+.skill_inner {
+  text-align: center;
+}
+
+.skill_inner .title {
+  max-width: 996px;
+  font-size: 32px;
+  line-height: 45px;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto 40px;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.skill_inner .title span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.skill_inner .skills {
+  margin: 0 auto;
+  width: 192px;
+  font-size: 24px;
+}
+
+.skill_inner .skills:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #96A9C4;
+  position: absolute;
+  top: 0px;
+  left: -24px;
+}
+
+.skill_inner .skills li {
+  font-weight: 100;
+  text-align: left;
+  margin-bottom: 16px;
+  line-height: 32px;
+}
+
+.experience_list {
+  padding-left: 48px;
+}
+
+.experience_list:before {
+  content: "";
+  display: block;
+  width: 1px;
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  height: 100%;
+  background-color: #96A9C4;
+}
+
+.experience_list li {
+  margin-bottom: 32px;
+  max-width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.experience_list li:first-child {
+  margin-bottom: 32px;
+}
+
+.experience_list li:last-child {
+  margin-bottom: 72px;
+}
+
+.experience_list img {
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+.experience_list span {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+.experience_list p {
+  max-width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+  margin-bottom: 32px;
+}
+
+footer {
+  color: #fff;
+  background-color: #415165;
+}
+
+footer .title {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  max-width: 996px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 45px;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto 32px;
+  padding-bottom: 3px;
+}
+
+footer .title span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+footer .contents {
+  text-align: center;
+  width: 100%;
+}
+
+footer .contents a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .contents li {
+  margin-bottom: 16px;
+}
+
+footer .contents li:last-child {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-bottom: 48px;
+}
+
+footer .contents li img {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.footer_inner {
+  width: 100%;
+}
+/*# sourceMappingURL=all.css.map */
