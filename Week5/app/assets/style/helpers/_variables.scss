@@ -18,6 +18,7 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 $gray-001 : #707070 !default;
+$gray-001-1:#121212 !default;
 $gray-002 : #00000062 !default;
 $gray-003 : #0000009A !default;
 
@@ -35,8 +36,9 @@ $grays: map-merge(
     "800": $gray-800,
     "900": $gray-900,
     "001": $gray-001,
+    "001-1": $gray-001-1,
     "002": $gray-002,
-    "003": $gray-003
+    "003": $gray-003,
   ),
   $grays
 );
@@ -1033,7 +1035,7 @@ $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
 $list-group-item-padding-y:         .75rem !default;
-$list-group-item-padding-x:         1.25rem !default;
+$list-group-item-padding-x:         .75rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;

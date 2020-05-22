@@ -97,4 +97,34 @@
 
 .assignment-section{
   margin-top: 12px;
+
+  .all-list{
+    p{
+      display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+        }
+    p,span{
+      font-size: 12px;
+      line-height: 24px;
+
+    }
+    .title{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $gray-001-1;
+    }
+  }
+
+  .comments{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    color: $gray-001;
+  }
 }
+
+
