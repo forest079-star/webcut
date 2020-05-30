@@ -5,8 +5,8 @@ body {
     -webkit-tap-highlight-color: transparent;
     //點擊亮光效果
 }
-input {
-    // -webkit-appearance: none;
+input,select {
+    -webkit-appearance: none;
     background-color: transparent;
     border: 1px solid #000;
     //ios input亮光效果
