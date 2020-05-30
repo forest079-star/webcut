@@ -1,0 +1,89 @@
+.h-100{
+	height: 100%;
+}
+
+.h-50{
+	height: 50%;
+}
+
+
+.h-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  間距類
+*/
+
+// margin padding 工具
+@each $name, $value in $spacing { 
+  .h {
+    &-p--#{$name} {
+      padding: $value;
+    }
+    &-pl--#{$name} {
+      padding-left: $value;
+    }
+    &-pr--#{$name} {
+      padding-right: $value;
+    }
+    &-pt--#{$name} {
+      padding-top: $value;
+    }
+    &-pb--#{$name} {
+      padding-bottom: $value;
+    }
+    &-py--#{$name} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    &-px--#{$name} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    &-m--#{$name} {
+      margin: $value;
+    }
+    &-ml--#{$name} {
+      margin-left: $value;
+    }
+    &-mr--#{$name} {
+      margin-right: $value;
+    }
+    &-mt--#{$name} {
+      margin-top: $value;
+    }
+    &-mb--#{$name} {
+      margin-bottom: $value;
+    }
+    &-my--#{$name} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+    &-mx--#{$name} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+  }
+}
+
+// font-weight 工具
+@each $name, $value in $font-weights {
+  .h {
+    &-fw--#{$name} {
+      font-weight: $value;
+    }
+  }
+};
+
+.h-fs-italic {
+  font-style: italic;
+}
+.h-ta-center {
+  text-align: center;
+}
+.h-ta-right {
+  text-align: right;
+}
+
