@@ -79,7 +79,7 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
+    "primary":    #2A8356, //blue !default;
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
@@ -140,11 +140,14 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: 4px,  //($spacer * .25),
+    2: 8px,  //($spacer * .5),
+    3: 16px, //$spacer,
+    4: 24px, //($spacer * 1.5),
+    5: 32px, //($spacer * 3)
+    6: 40px,
+    7: 48px,
+    8: 72px,
   ),
   $spacers
 );
@@ -296,7 +299,7 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default; //2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
