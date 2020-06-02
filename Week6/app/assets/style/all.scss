@@ -8,7 +8,9 @@
 
 @import "components/modal";
 
-@import 'grid';
+
+// @import 'grid';
+@import 'helpers/mixin-grid';
 
 // tools
 @import 'tools';
