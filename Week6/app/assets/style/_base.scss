@@ -5,12 +5,17 @@ body {
     -webkit-tap-highlight-color: transparent;
     //點擊亮光效果
 }
-input, select {
+
+input,
+select {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: transparent;
     // border: 1px solid #000;
     //ios input亮光效果
 }
+
 ul {
     margin-bottom: 0;
 }
@@ -30,25 +35,3 @@ img {
     padding: 0;
 }
 
-
-// h1, .h1 {
-//     font-size: 3rem;
-//   }
-//   h2, .h2{
-//     font-size: 2rem;
-//   }
-  
-//   h3, .h3 {
-//     font-size: 1.5rem;  
-//   }
-//   h4, .h4{
-//     font-size: 20px;
-//   }
-//   h6, .h6{
-//     font-size: 14px;
-//   }
-  
-//   h1, .h1,h2, .h2,h3, .h3,h4, .h4,h6, .h6{
-//     line-height: 1.5;
-//   }
-  

@@ -1,0 +1,86 @@
+.banner {
+  background-image: url(https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.artery {
+  background-image: url(../images/burningparrot-u2Xn5Bzvllw-unsplash.jpg);
+  // background-repeat: no-repeat;
+  height: 400px;
+  background-position: center 48%;
+  background-size: 80%;
+
+  .artery-text {
+    h2 {
+      line-height: 48px;
+    }
+  }
+
+  .artery-card {
+    .artery-name {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 16px;
+
+      &:first-child {
+        margin-right: 23px;
+      }
+    }
+  }
+}
+
+.subscribe {
+  background-image: url(../images/tom-crew-uDF1mW7EUwM-unsplash.jpg);
+  background-repeat: no-repeat;
+  // height: 400px;
+  padding: 84px 0;
+  background-position: center;
+  background-size: cover;
+  h2{
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  input[type='submit'] {
+    padding: 20px 44px 17px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 18px 1.5rem;
+    line-height: 1.2;
+  }
+  input[type='email'] {
+    color:$gray-200;
+    padding: 19px 16px;
+  }
+
+}
+
+.slider{
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.swiper-slide {
+  width: 350px;
+  height: 416px;
+  margin-right: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  //去除圖片縫隙
+}
