@@ -8,13 +8,14 @@
 $white:    #fff !default;
 $gray-100: #FFFFFFDE !default;
 $gray-200: #FFFFFF99;//#e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-300: #00000062;// #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #0000009A;//#adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$gray-1000:#F2F2F2 !default;
 $black:    #121212;//#000 !default;
 
 $grays: () !default;
@@ -66,7 +67,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       #0E8A00;//$blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -87,9 +88,12 @@ $theme-colors: map-merge(
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark,
+    "black":      $black,
     "gray-100":   $gray-100,
     "gray-200":   $gray-200,
+    "gray-300":   $gray-300,
     "gray-500":   $gray-500,
+    "gray-1000":  $gray-1000,
   ),
   $theme-colors
 );
@@ -185,7 +189,7 @@ $body-color:                $gray-900 !default;
 $link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
-$link-hover-decoration:                   underline !default;
+$link-hover-decoration:                   none;//underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
 
@@ -804,9 +808,9 @@ $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 $pagination-line-height:            1.25 !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  $black;//$link-color !default;
 $pagination-bg:                     $white !default;
-$pagination-border-width:           $border-width !default;
+$pagination-border-width:           none;//$border-width !default;
 $pagination-border-color:           $gray-300 !default;
 
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
@@ -816,8 +820,8 @@ $pagination-hover-color:            $link-hover-color !default;
 $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-color:           $primary;//$component-active-color !default;
+$pagination-active-bg:              none;//$component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;
@@ -835,11 +839,11 @@ $jumbotron-bg:                      $gray-200 !default;
 // Cards
 
 $card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-x:                     0;//1.25rem !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-border-radius:                2px;//$border-radius !default;
+$card-border-color:                 0;//rgba($black, .125) !default;
+$card-inner-border-radius:          0;//subtract($card-border-radius, $card-border-width) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;

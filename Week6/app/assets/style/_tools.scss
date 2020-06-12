@@ -6,6 +6,23 @@
   height: 50%;
 }
 
+.h-240 {
+  @include md() {
+    height: 240px !important;
+  }
+}
+
+.h-350 {
+  @include md(){
+    height: 350px !important;
+  }
+}
+
+.h-480 {
+  @include md(){
+    height: 480px !important;
+  }
+}
 
 .h-mx-auto {
   margin-left: auto;
@@ -18,39 +35,38 @@
   line-height: 29px;
 }
 
-.bg-cover{
+.bg-cover {
   background-size: cover;
   background-position: center center;
 }
 
 
-.text-sm-dark{
+.text-sm-dark {
   @include sm() {
     color: #121212 !important;
   }
 }
 
-.text-md-dark{
+.text-md-dark {
   @include md() {
     color: #121212 !important;
   }
 }
 
-.text-sm-white{
+.text-sm-white {
   @include sm() {
     color: #FFF !important;
   }
 }
 
-.text-md-gray-500{
+.text-md-gray-500 {
   @include md() {
     color: $gray-500 !important;
   }
 }
 
-.text-md-white{
+.text-md-white {
   @include md() {
     color: #333 !important;
   }
 }
-

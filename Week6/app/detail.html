@@ -1,0 +1,149 @@
+---
+title: Detail
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="nav w-100 pb-md-7">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
+      <button class="navbar-toggler border-0 pl-0 text-dark text-md-dark" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <i class="material-icons">dehaze</i>
+      </button>
+
+      <a class="navbar-brand logo font-raleway text-dark text-md-dark" href="index.html">Craftsman</a>
+
+      <a class="nav-link pr-0 order-md-3 d-flex align-items-center text-dark" href="#" data-toggle="modal"
+         data-target="#exampleModal">
+        <i class="material-icons">shopping_cart</i>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-md-auto">
+          <li class=" active">
+            <a class="nav-link text-dark" href="product.html">Product</a>
+          </li>
+          <li class="">
+            <a class="nav-link text-dark" href="#">Blog</a>
+          </li>
+          <li class="">
+            <a class="nav-link text-dark" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="product-detail">
+  <div class="container">
+    <div class="row flex-nowrap align-items-center">
+      <div class="col-md-8">
+        <div class="product-image position-relative pb-md-7">
+          <a href="#">
+            <img src="./assets/images/tom-crew-XtyxEBiA8D8-unsplash.jpg" alt="">
+          </a>
+          <span class="onsale">onsale</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-white py-5 pl-5" style="margin-left: -90px;">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Product</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Cup</li>
+            </ol>
+          </nav>
+          <div class="card-body">
+            <h1 class="card-title">Tatami Cup</h1>
+            <div class="money text-right mb-4">
+              <del>NT$1,200</del>
+              <p class="card-text">NT$1,080</p>
+            </div>
+            <div class="btn-group-list btn-toolbar">
+              <div class="btn-group mr-md-2" role="group" aria-label="Basic example">
+                <a href="#" class="btn btn-gray-1000 px-3">-</a>
+                <a href="#" class="btn btn-gray-1000 px-3">1</a>
+                <a href="#" class="btn btn-gray-1000 px-3">+</a>
+              </div>
+              <a href="#" class="btn btn-primary btn-md flex-grow-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="product-text">
+          <p>This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use
+            this cup for tea, coffee, dessert, or to place small items as a dish tray.</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="product-detail-group">
+          <p>Made in Taiwan <br> 8 x 8 x 6 cm <br> Dishwasher and Microwave-safe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guess-like slider">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-3">You might also like…</h2>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-container-guess swiper-container-initialized swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+      <div class="swiper-slide swiper-slide-active">
+        <div class="card">
+          <img src="./assets/images/tom-crew-bgIO-u4GEfI-unsplash.jpg" class="pb-2" alt="...">
+          <div class="card-body">
+            <h3>Baifan Bowl</h3>
+            <p>NT$1,800</p>
+            <del>NT$1,980</del>
+            <span class="onsale">On Sale</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide-next">
+        <div class="card">
+          <img src="./assets/images/tom-crew-vu0lyZYeseY-unsplash.jpg" class="pb-2" alt="...">
+          <div class="card-body">
+            <h3>Kabi Mug</h3>
+            <p>NT$980</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./assets/images/tom-crew-oiZAQvxTcYQ-unsplash.jpg" class="pb-2" alt="...">
+          <div class="card-body">
+            <h3>Limdae Cup</h3>
+            <p>NT$2,400</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./assets/images/tom-crew-7HuTGlUfQSo-unsplash.jpg" class="pb-2" alt="...">
+          <div class="card-body">
+            <h3>Couple Collection</h3>
+            <p>NT$2,800</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+  </div>
+</section>

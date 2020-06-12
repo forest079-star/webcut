@@ -46,7 +46,8 @@
   padding: 84px 0;
   background-position: center;
   background-size: cover;
-  h2{
+
+  h2 {
     font-size: 48px;
     line-height: 64px;
   }
@@ -60,16 +61,50 @@
     padding: 18px 1.5rem;
     line-height: 1.2;
   }
+
   input[type='email'] {
-    color:$gray-200;
+    color: $gray-200;
     padding: 19px 16px;
   }
 
 }
 
-.slider{
+.slider {
   padding-top: 72px;
   padding-bottom: 72px;
+  .card{
+    img{
+      object-fit: cover;
+      height: 350px;
+    }
+  }
+
+  .card-body {
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    p{
+      display: inline;
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 8px;
+    }
+    del{
+      font-size: 16px;
+      line-height: 24px;
+      color:$gray-300;
+    }
+    .onsale{
+      color:#fff;
+      position: absolute;
+      font-size: 14px;
+      line-height: 21px;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
 }
 
 .swiper-slide {
