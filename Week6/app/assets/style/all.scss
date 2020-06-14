@@ -6,9 +6,6 @@
 @import "./helpers/variables";
 @import "bootstrap";
 
-@import "components/modal";
-
-
 // @import 'grid';
 @import 'helpers/mixin-grid';
 
@@ -19,6 +16,8 @@
 
 // layout
 @import './layout/layout';
+
+@import "components/modal";
 
 // pages
 @import './pages/index';

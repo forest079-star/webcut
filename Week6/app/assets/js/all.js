@@ -15,8 +15,9 @@ $(document).ready(() => {
     spaceBetween: null,
     pagination: {
       el: '.swiper-pagination',
-      clickable: true
+      clickable: false
     },
+    loop: true,
   });
 
   var swiper = new Swiper('.swiper-container-guess', {
