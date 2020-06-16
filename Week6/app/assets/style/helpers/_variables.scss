@@ -155,6 +155,8 @@ $spacers: map-merge(
     6: 40px,
     7: 48px,
     8: 72px,
+    14:14px,
+    28:28px,
   ),
   $spacers
 );
@@ -950,7 +952,7 @@ $badge-pill-border-radius:          10rem !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:               54px 48px;//1rem !default;
+$modal-inner-padding:               0rem !default;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
 $modal-footer-margin-between:       .5rem !default;
@@ -975,8 +977,8 @@ $modal-header-border-color:         $border-color !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding-y:            54px;//1rem !default;
-$modal-header-padding-x:            48px;//1rem !default;
+$modal-header-padding-y:           0rem !default;
+$modal-header-padding-x:            0rem !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-xl:                          1140px !default;
