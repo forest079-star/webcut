@@ -157,6 +157,7 @@ $spacers: map-merge(
     8: 72px,
     14:14px,
     28:28px,
+    35:35px,
   ),
   $spacers
 );
@@ -344,7 +345,7 @@ $blockquote-small-font-size:  $small-font-size !default;
 $blockquote-font-size:        $font-size-base * 1.25 !default;
 
 $hr-border-color:             rgba($black, .1) !default;
-$hr-border-width:             $border-width !default;
+$hr-border-width:             2px;//$border-width !default;
 
 $mark-padding:                .2em !default;
 
@@ -469,7 +470,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 $label-margin-bottom:                   .5rem !default;
 
 $input-padding-y:                       $input-btn-padding-y !default;
-$input-padding-x:                       $input-btn-padding-x !default;
+$input-padding-x:                       1rem;//$input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
 $input-font-weight:                     $font-weight-base !default;
@@ -528,7 +529,7 @@ $form-check-inline-margin-x:            .75rem !default;
 $form-check-inline-input-margin-x:      .3125rem !default;
 
 $form-grid-gutter-width:                10px !default;
-$form-group-margin-bottom:              1rem !default;
+$form-group-margin-bottom:              8px;//1rem !default;
 
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
@@ -1076,7 +1077,7 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     $gray-200 !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote(">") !default;
 
 $breadcrumb-border-radius:          $border-radius !default;
 

@@ -6,14 +6,17 @@ body {
     //點擊亮光效果
 }
 
-input,
-select {
+input{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
     // border: 1px solid #000;
     //ios input亮光效果
+}
+
+select{
+    background-color: transparent; 
 }
 
 ul {

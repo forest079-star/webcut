@@ -10,27 +10,16 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
-  
+
 </head>
 
 <body>
 
   <section class="nav w-100">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
-        <button class="navbar-toggler border-0 pl-0 text-dark text-md-dark" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <i class="material-icons">dehaze</i>
-        </button>
-  
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0 offset-md-1">
         <a class="navbar-brand logo font-raleway text-dark text-md-dark" href="index.html">Craftsman</a>
-  
-        <a class="nav-link pr-0 order-md-3 d-flex align-items-center text-dark" href="#" data-toggle="modal"
-           data-target="#exampleModal">
-          <i class="material-icons">shopping_cart</i>
-        </a>
-        
+      
       </nav>
     </div>
   </section>
@@ -40,45 +29,25 @@
   <%- contents %>
 
 
-  <!-- subscribe -->
-  <section class="subscribe">
-    <div class="container h-100">
-      <div class="row">
-        <div class="col-md-5">
-          <h2 class="text-white font-weight-bold mb-4 mb-md-7">
-            Subscribe for news and special offers!
-          </h2>
-          <form class="position-relative" action="javascript:;" method="post">
-            <input type="email" class="form-control bg-transparent font-weight-bold" id="subscribeEmail"
-                   aria-describedby="emailHelp" placeholder="Your email address">
-            <input type="submit" class="btn btn-primary font-weight-bold" value="Subscribe">
-          </form>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
+
 
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer bg-white">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="footer-group">
-            <div class="footer-logo mr-3">
-              <a class="logo font-raleway text-white text-decoration-none" href="index.html">Craftsman</a>
-            </div>
-            <p class="text-gray-200 mr-auto mb-0">© 2020. All Rights Reserved.</p>
-            <div class="terms-group">
-              <a class="text-white mr-7" href="#">Purchase Policy</a>
-              <a class="text-white mr-7" href="#">Privacy Policy</a>
-              <a class="text-white" href="#">Terms & Conditions</a>
-            </div>
-          </div>
+        <div class="col offset-md-1">
+          <ul class="d-md-flex align-items-md-center mb-0 list-unstyled">
+            <li class="mb-3 mb-md-0 mr-md-4">
+              <a href="javascript:;" class="d-block text-gray-500">Purchase Policy</a>
+            </li>
+            <li class="mb-3 mb-md-0 mr-md-4">
+              <a href="javascript:;" class="d-block text-gray-500">Privacy Policy</a>
+            </li>
+            <li><a href="javascript:;" class="d-block text-gray-500">Terms &amp; Conditions</a></li>
+          </ul>
         </div>
       </div>
     </div>
-
   </footer>
 
   <script src="./assets/js/vendors.js"></script>

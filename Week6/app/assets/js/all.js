@@ -34,4 +34,11 @@ $(document).ready(() => {
     // },
   });
 
+  $('.orderSummary').on('click', function(){
+    $(this).toggleClass('show');
+  })
+  $('.orderSummary-1').on('click', function(){
+    $('.orderSummary-1').toggleClass('show');
+  })
+
 });
