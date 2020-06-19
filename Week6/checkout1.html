@@ -1,10 +1,51 @@
----
-title: Checkout-1
-layout: ./app/layout3.ejs
-engine: ejs
-current: Checkout-1
----
+<!DOCTYPE html>
+<html lang="zh-TW">
 
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- 作者 -->
+<meta name="author" content="" />
+<!-- 關鍵字 -->
+<meta name="keywords" content="" />
+<!-- 網頁說明 -->
+<meta name="description" content="" />
+<!-- 公司名稱 -->
+<meta name="company" content="" />
+<!-- 版權宣告 -->
+<meta name="copyright" content="" />
+<!-- 網站發佈地址 -->
+<meta name="Distribution" content="" />
+<!-- 分享的標題  -->
+<meta property=" og:title" content="" />
+<!-- 分享的內容敘述 -->
+<meta property="og:description" content="" />
+<!-- 分享的網頁連結 -->
+<meta property="og:url" content="" />
+<!--分享在FB的縮圖 -->
+<meta property="og:image" content="" />
+  <title>Checkout-1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+
+  <section class="nav w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0 offset-md-1">
+        <a class="navbar-brand logo font-raleway text-dark text-md-dark" href="index.html">Craftsman</a>
+      </nav>
+    </div>
+  </section>
+
+  
 <div class="container">
   <div class="row">
     <div class="col offset-md-1">
@@ -19,7 +60,7 @@ current: Checkout-1
   </div>
   <div class="row flex-column-reverse flex-md-row">
     <div class="col-md-6 offset-md-1">
-      <div class="contactInformation">
+      <div class="contactInformation" data-aos="fade-right">
         <form class="checkOut-form" action="">
           <h2 class="h5">Contact information</h2>
           <div class="form-group">
@@ -70,10 +111,12 @@ current: Checkout-1
       </div>
     </div>
     <div class="col-md-4">
-      <div class="contactPrice bg-gray-1000 mb-4">
-        <a class="btn btn-gray-1000 w-100 d-md-none d-flex align-items-center px-3 orderSummary show" data-toggle="collapse" href="#collapseExample" role="button"
-           aria-expanded="true" aria-controls="collapseExample">
-          <span>Order Summary</span><span class="font-weight-bold ml-auto">NT$4,760</span><i class="material-icons orderSummaryShowBtn_down text-primary">keyboard_arrow_down</i>
+      <div class="contactPrice bg-gray-1000 mb-4" data-aos="fade-left">
+        <a class="btn btn-gray-1000 w-100 d-md-none d-flex align-items-center px-3 orderSummary show"
+           data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+           aria-controls="collapseExample">
+          <span>Order Summary</span><span class="font-weight-bold ml-auto">NT$4,760</span><i
+             class="material-icons orderSummaryShowBtn_down text-primary">keyboard_arrow_down</i>
         </a>
         <div class="collapse show" id="collapseExample">
           <div class="card-list p-3 p-md-5">
@@ -109,10 +152,39 @@ current: Checkout-1
             </div>
           </div>
         </div>
-       
+
       </div>
     </div>
   </div>
 
 
 </div>
+
+  <!-- footer -->
+  <footer class="footer bg-white def">
+    <div class="container">
+      <div class="row">
+        <div class="col offset-md-1  pb-3">
+          <ul class="d-md-flex align-items-md-center mb-0 list-unstyled">
+            <li class="mb-3 mb-md-0 mr-md-4">
+              <a href="javascript:;" class="d-block text-gray-500">Purchase Policy</a>
+            </li>
+            <li class="mb-3 mb-md-0 mr-md-4">
+              <a href="javascript:;" class="d-block text-gray-500">Privacy Policy</a>
+            </li>
+            <li><a href="javascript:;" class="d-block text-gray-500">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+
+</body>
+
+</html>
