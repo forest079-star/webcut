@@ -1,0 +1,131 @@
+/*******************
+ *                 *
+ *    variables    *
+ *                 *
+ *******************/
+
+ // Color system
+$white:    #fff !default;
+$gray-100: #FFFFFFDE !default;
+$gray-200: #FFFFFF99;//#e9ecef !default;
+$gray-300: #00000062;// #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #0000009A;//#adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$gray-1000:#F2F2F2 !default;
+$black:    #121212;//#000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       #0E8A00;//$blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    #0E8A00, //blue !default;
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "black":      $black,
+    "gray-100":   $gray-100,
+    "gray-200":   $gray-200,
+    "gray-300":   $gray-300,
+    "gray-500":   $gray-500,
+    "gray-1000":  $gray-1000,
+  ),
+  $theme-colors
+);
+
+// 推擠倍數
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: 4px,  //($spacer * .25),
+    2: 8px,  //($spacer * .5),
+    3: 16px, //$spacer,
+    4: 24px, //($spacer * 1.5),
+    5: 32px, //($spacer * 3)
+    6: 40px,
+    7: 48px,
+    8: 72px,
+    14:14px,
+    15:15px,
+    28:28px,
+    35:35px,
+  ),
+  $spacers
+);
+
+$font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei",  "Helvetica Neue", Arial, sans-serif;
+
+// 導覽列變數
+$navbar-light-active-color: map-get($theme-colors, primary);
+$navbar-light-hover-color: map-get($theme-colors, primary);
+$navbar-dark-color:white;
+$navbar-dark-hover-color: map-get($theme-colors, primary);
+
+// a
+$link-color:black;
+$link-hover-color:map-get($theme-colors, primary);
+
+
+// 分頁變數
+$pagination-active-color: map-get($theme-colors, primary);
+$pagination-active-bg: white;
+
+
+
+
+
+
+
+
+

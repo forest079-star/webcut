@@ -1,0 +1,96 @@
+.productNav {
+  padding: 16px 0px;
+
+  @include md() {
+    padding: 24px 85px;
+
+  }
+
+  .menu {
+    li {
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 20px;
+
+
+      @include md() {
+        font-size: 24px;
+        line-height: 28px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+
+}
+
+.product-group {
+  .card {
+    img {
+      object-fit: cover;
+      width: 161px;
+      height: 161px;
+
+      @include md() {
+        width: 350px;
+
+      }
+    }
+  }
+
+  .card-body {
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    p {
+      display: inline;
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 8px;
+    }
+
+    del {
+      font-size: 16px;
+      line-height: 24px;
+      color: $gray-300;
+    }
+
+    .onsale {
+      color: #fff;
+      position: absolute;
+      font-size: 14px;
+      line-height: 21px;
+
+      top: 8px;
+      right: 8px;
+
+      @include md() {
+        top: 16px;
+        right: 16px;
+      }
+    }
+  }
+}
+
+.page-item.active .page-link {
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.page-link {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.card-columns {
+  @include media-breakpoint-only(xs) {
+    column-count: 2;
+  }
+}
+
+.swiper-container-guess{
+  overflow: hidden;
+}
+

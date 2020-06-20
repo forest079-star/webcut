@@ -1,0 +1,40 @@
+html,
+body {
+    -webkit-text-size-adjust: none;
+    //手機反轉時文字不縮放
+    -webkit-tap-highlight-color: transparent;
+    //點擊亮光效果
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    // border: 1px solid #000;
+    //ios input亮光效果
+}
+
+select{
+    background-color: transparent; 
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    //去除圖片縫隙
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+

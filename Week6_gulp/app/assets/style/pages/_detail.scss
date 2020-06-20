@@ -1,0 +1,64 @@
+.product-detail {
+  .onsale {
+    position: absolute;
+    color: $white;
+    font: Bold 14px/21px Roboto;
+    top: 24px;
+    right: 24px;
+
+    @include md() {
+      top: 24px;
+      right: 24px;
+    }
+  }
+
+  del {
+    font: Regular 16px/24px Roboto;
+    color: $gray-300;
+  }
+
+  .card-text {
+    font: Bold 24px/28px Roboto !important;
+    color: $black !important;
+  }
+
+  .product-text {
+    p {
+      font: Regular 20px/30px Roboto;
+      color: $black;
+    }
+  }
+
+  .product-detail-group {
+    p {
+      font: Regular 16px/24px Roboto;
+      color: $gray-500;
+    }
+  }
+
+  .breadcrumb-item {
+    a {
+      color: $gray-500;
+    }
+  }
+
+
+}
+
+.product-detail-price{
+  margin-top: -35px;
+  @include md(){
+    margin-left: -90px;
+  }
+}
+
+.product-text{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(18, 18, 18, 1);
+  font: Regular 20px/30px Roboto;
+  @include md(){
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

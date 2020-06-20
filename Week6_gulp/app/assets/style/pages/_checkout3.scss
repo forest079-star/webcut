@@ -1,0 +1,24 @@
+.banner-checkout3{
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../../assets/images/annie-spratt-TEhfafMgFSM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  @include md(){
+    background-image:url(../../assets/images/annie-spratt-TEhfafMgFSM-unsplash.jpg);
+  }
+}
+
+.done-text{
+  font-size: 16px;
+  line-height: 24px;
+  color:rgba(255, 255, 255, 0.6) !important;
+  @include md(){
+    font-size: 24px;
+    line-height: 36px;
+    color:#0000009A !important;
+  }
+}

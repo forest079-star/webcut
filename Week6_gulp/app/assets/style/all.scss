@@ -1,0 +1,27 @@
+// custom val
+// @import 'val';
+
+//bootstrap 4
+@import "functions";
+@import "./helpers/variables";
+@import "bootstrap";
+
+// @import 'grid';
+@import 'helpers/mixin-grid';
+
+@import 'base';
+
+// tools
+@import 'tools';
+
+// layout
+@import './layout/layout';
+
+@import "components/modal";
+
+// pages
+@import './pages/index';
+@import './pages/product';
+@import './pages/detail';
+@import './pages/checkout1';
+@import './pages/checkout3';

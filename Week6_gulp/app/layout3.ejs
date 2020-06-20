@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <%- include('meta.ejs') %>
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+
+  <section class="nav w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0 <%- offset %>">
+        <a class="navbar-brand logo font-raleway text-dark text-md-dark" href="index.html">Craftsman</a>
+      </nav>
+    </div>
+  </section>
+
+  <%- contents %>
+
+  <!-- footer -->
+  <footer class="footer bg-white <%- dp %>">
+    <div class="container">
+      <div class="row">
+        <div class="col offset-md-1  pb-3">
+          <ul class="d-md-flex align-items-md-center mb-0 list-unstyled">
+            <li class="mb-3 mb-md-0 mr-md-4">
+              <a href="javascript:;" class="d-block text-gray-500">Purchase Policy</a>
+            </li>
+            <li class="mb-3 mb-md-0 mr-md-4">
+              <a href="javascript:;" class="d-block text-gray-500">Privacy Policy</a>
+            </li>
+            <li><a href="javascript:;" class="d-block text-gray-500">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+
+</body>
+
+</html>
